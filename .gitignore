@@ -1,0 +1,15 @@
+# Claude Code local settings
+.claude/
+
+# macOS / editor junk
+.DS_Store
+*.swp
+.thumbnail
+
+# Old DesignComposer export (replaced by index.html/styles.css/app.js)
+Ethan Liu Portfolio.dc.html
+support.js
+image-slot.js
+
+# Raw source material / duplicates — not part of the published site
+uploads/
