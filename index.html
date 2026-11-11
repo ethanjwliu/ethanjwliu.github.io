@@ -1,243 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jiawei "Ethan" Liu — Applied Economist &amp; Data Scientist</title>
-  <meta name="description" content="Portfolio of Jiawei (Ethan) Liu — applied economist, data scientist, and PhD researcher working in econometrics, causal inference, and forecasting.">
-  <meta name="author" content="Jiawei (Ethan) Liu">
-
-  <!-- Open Graph -->
+  <meta name="theme-color" content="#f9f7f2">
+  <title>Jiawei “Ethan” Liu | Research &amp; policy</title>
+  <meta name="description" content="Jiawei (Ethan) Liu is a PhD researcher at Rutgers Business School studying international business, political risk, and economic policy.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Jiawei &quot;Ethan&quot; Liu — Applied Economist &amp; Data Scientist">
-  <meta property="og:description" content="Econometrics, causal inference, and forecasting for questions about markets, policy, and AI.">
-  <meta property="og:image" content="headshot.jpg">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Jiawei “Ethan” Liu | Research &amp; policy">
+  <meta property="og:description" content="Research on international business, political risk, and economic policy.">
+  <meta property="og:image" content="https://ethanjwliu.github.io/headshot.jpg">
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-head">
+    <div class="wrap masthead">
+      <a class="signature" href="#home" aria-label="Ethan Liu, home">Ethan Liu<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#research" data-nav="research">Research</a>
+        <a href="#toolbox" data-nav="toolbox">Methods</a>
+        <a href="#about" data-nav="about">About</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- ===================== NAV ===================== -->
-  <nav class="nav">
-    <div class="wrap">
-      <button class="nav__brand" data-nav="home">Ethan Liu</button>
-      <div class="nav__links">
-        <button class="nav__link" data-nav="about">About Me</button>
-        <button class="nav__link" data-nav="research">Research &amp; Projects</button>
-        <button class="nav__link" data-nav="toolbox">Toolbox</button>
-        <button class="nav__link nav__link--contact" data-scroll="contact">Contact</button>
+  <main id="content" tabindex="-1">
+    <div class="page" data-page="home">
+      <div class="wrap">
+        <header class="profile">
+          <div class="profile-copy">
+            <p class="byline"><span class="rule" aria-hidden="true"></span>Rutgers Business School</p>
+            <h1>Jiawei <em>“Ethan”</em> Liu</h1>
+            <p class="intro">I study how firms respond to political risk and how public policy shapes markets.</p>
+            <p class="bio">I’m a PhD student in Management at Rutgers, specializing in international business. Before Rutgers, I worked on economic policy at North Dakota State University.</p>
+            <div class="profile-links">
+              <a class="action" href="#research">Explore research <span aria-hidden="true">→</span></a>
+              <a class="download" href="Jiawei_Liu_Resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+          <figure class="portrait">
+            <img src="portrait.webp" width="650" height="910" alt="Portrait of Jiawei Liu">
+          </figure>
+        </header>
+
+        <section class="split selected" aria-labelledby="selected-title">
+          <div class="side">
+            <h2 id="selected-title">Selected work</h2>
+            <a class="text-link" href="#research">All research &amp; projects <span aria-hidden="true">→</span></a>
+          </div>
+          <div id="selected-list" class="entries"></div>
+        </section>
       </div>
     </div>
-  </nav>
 
-  <!-- ===================== HOME ===================== -->
-  <main class="page is-active" data-page="home">
-
-    <header class="hero" id="top">
+    <div class="page" data-page="research" hidden>
       <div class="wrap">
-        <div class="eyebrow hero__eyebrow">Applied Economist · Data Scientist · PhD Researcher</div>
-        <h1>Jiawei &ldquo;Ethan&rdquo; Liu</h1>
-        <p class="hero__lead">I use econometrics, causal inference, and forecasting to answer questions about markets, policy, and AI.</p>
-        <p class="hero__sub">Rutgers Business School PhD &nbsp;|&nbsp; Columbia coursework in structural IO &nbsp;|&nbsp; Peer-reviewed publication and policy research cited in legislative discussions &nbsp;|&nbsp; Open to data science, economist, and research roles.</p>
-        <div class="hero__cta">
-          <a class="btn btn--primary" href="Jiawei_Liu_Resume.pdf" download>Download Resume</a>
-          <a class="btn btn--ghost" href="mailto:ethanjw.liu@rutgers.edu">Email</a>
-          <a class="btn btn--ghost" href="https://www.linkedin.com/in/jiawei-ethan-liu/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-      </div>
-    </header>
-
-    <section class="section" id="what-i-do">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 class="section-label">01 — What I Do</h2>
-          <div class="arrows" data-arrows="cap">
-            <button class="arrow" data-dir="prev" aria-label="Previous">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"></path></svg>
-            </button>
-            <button class="arrow" data-dir="next" aria-label="Next">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg>
-            </button>
+        <header class="page-heading">
+          <h1>Research &amp; projects</h1>
+          <p>Published papers, ongoing research, and applied policy work.</p>
+        </header>
+        <section class="split archive" aria-label="Research archive">
+          <div class="side controls">
+            <fieldset class="group-controls">
+              <legend>Project type</legend>
+              <div id="research-groups"></div>
+            </fieldset>
+            <label class="field-label" for="topic">Topic</label>
+            <select id="topic"><option value="">All topics</option></select>
           </div>
-        </div>
-        <div class="track" id="cap-track"></div>
-        <div class="dots" id="cap-dots"></div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="projects">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 class="section-label">02 — Selected Work</h2>
-          <div class="arrows" data-arrows="work">
-            <button class="arrow" data-dir="prev" aria-label="Previous">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"></path></svg>
-            </button>
-            <button class="arrow" data-dir="next" aria-label="Next">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg>
-            </button>
+          <div>
+            <p class="result-count" id="research-count" aria-live="polite"></p>
+            <div id="research-list" class="entries"></div>
           </div>
-        </div>
-        <div class="chips" id="work-chips"></div>
-        <div class="track" id="work-track"></div>
-        <div class="dots" id="work-dots"></div>
-        <div class="center-cta">
-          <button class="btn btn--dark" data-nav="research">Explore Research &amp; Projects →</button>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
+
+    <div class="page" data-page="toolbox" hidden>
+      <div class="wrap">
+        <header class="page-heading">
+          <h1>Methods</h1>
+          <p>How I use econometrics, text analysis, and public data in my research.</p>
+        </header>
+        <section class="split" aria-labelledby="methods-heading">
+          <div class="side"><h2 id="methods-heading">Methods in practice</h2></div>
+          <div id="methods-list" class="entries"></div>
+        </section>
+        <section class="split" aria-labelledby="cap-heading">
+          <div class="side"><h2 id="cap-heading">Areas of work</h2></div>
+          <div id="capabilities" class="entries"></div>
+        </section>
+        <p class="tool-note">Additional tools include MATLAB, Bloomberg, and Capital IQ. <a href="Jiawei_Liu_Resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a></p>
+      </div>
+    </div>
+
+    <div class="page" data-page="about" hidden>
+      <div class="wrap">
+        <header class="page-heading">
+          <h1>About me</h1>
+          <p>My work brings together international business, applied economics, and public policy.</p>
+        </header>
+        <section class="split" aria-labelledby="edu-heading">
+          <div class="side"><h2 id="edu-heading">Education</h2></div>
+          <div class="entries">
+            <article class="record"><p class="meta">2025–present · Newark, NJ</p><h3>Rutgers Business School</h3><p>PhD in Management, Strategy &amp; International Business. Coursework includes strategic management, global political economy, non-market strategy, causal inference, machine learning, and organization theory. I also study structural industrial organization at Columbia.</p></article>
+            <article class="record"><p class="meta">2021–2023 · Waltham, MA</p><h3>Brandeis University</h3><p>MA in International Economics and Finance, with a STEM concentration in Data Analytics.</p></article>
+            <article class="record"><p class="meta">2016–2020 · Chengdu, China</p><h3>Southwestern University of Finance and Economics</h3><p>BS in Finance. First-Class Academic Scholarship (top 1%).</p></article>
+            <article class="record"><p class="meta">2019 · Berkeley, CA</p><h3>University of California, Berkeley</h3><p>Exchange student, Berkeley Global Access Program.</p></article>
+          </div>
+        </section>
+        <section class="split" aria-labelledby="exp-heading">
+          <div class="side"><h2 id="exp-heading">Experience</h2></div>
+          <div class="entries">
+            <article class="record"><p class="meta">October 2023–June 2025 · Fargo, ND</p><h3>Economic Policy Research Specialist</h3><p class="institution">North Dakota State University</p><p>I studied migration, food insecurity, higher education funding, and trade. I prepared policy briefs and dashboards for legislators, journalists, and community partners.</p></article>
+            <article class="record"><p class="meta">March–September 2023 · Waltham, MA</p><h3>Energy Industry Research Assistant</h3><p class="institution">Brandeis University</p><p>I analyzed global renewable energy development and how Chinese solar supply chains changed under anti-dumping investigations.</p></article>
+          </div>
+        </section>
+        <section class="split" aria-labelledby="pub-heading">
+          <div class="side"><h2 id="pub-heading">Publications</h2></div>
+          <div id="publications" class="entries"></div>
+        </section>
+      </div>
+    </div>
+
+    <noscript><p class="wrap">Enable JavaScript to browse the research archive, methods, and biography. The résumé and contact links are available below.</p></noscript>
   </main>
 
-  <!-- ===================== ABOUT ===================== -->
-  <main class="page" data-page="about">
-    <header class="page-head page-head--about">
-      <div class="wrap">
-        <div style="flex:1 1 520px; min-width:300px;">
-          <h1>About Me</h1>
-        </div>
-        <div class="about-photo">
-          <img src="headshot.jpg" alt="Jiawei (Ethan) Liu">
-        </div>
-      </div>
-    </header>
-
-    <section class="about-block">
-      <div class="wrap">
-        <span class="eyebrow">Education</span>
-        <h2>Training</h2>
-        <div class="timeline">
-          <div class="timeline__row">
-            <div class="timeline__date">2025 — now</div>
-            <div>
-              <div class="timeline__title">Ph.D. in Management — Rutgers University, Newark, NJ</div>
-              <p class="timeline__desc">Strategy &amp; International Business. Coursework: Strategic Management, Global Political Economy, Non-Market Strategy, Causal Inference, Machine Learning, Organization Theory.</p>
-            </div>
-          </div>
-          <div class="timeline__row">
-            <div class="timeline__date">2021 — 2023</div>
-            <div>
-              <div class="timeline__title">M.A. in International Economics &amp; Finance — Brandeis University, Waltham, MA</div>
-              <p class="timeline__desc">Data Analytics concentration (STEM).</p>
-            </div>
-          </div>
-          <div class="timeline__row">
-            <div class="timeline__date">2016 — 2020</div>
-            <div>
-              <div class="timeline__title">B.S. in Finance — Southwestern University of Finance and Economics, Chengdu, China</div>
-              <p class="timeline__desc">First-Class Academic Scholarship (Top 1%).</p>
-            </div>
-          </div>
-          <div class="timeline__row">
-            <div class="timeline__date">2019</div>
-            <div>
-              <div class="timeline__title">Exchange — University of California, Berkeley</div>
-              <p class="timeline__desc">Berkeley Global Access Program.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-block section--alt">
-      <div class="wrap">
-        <span class="eyebrow">Work</span>
-        <h2>Experience</h2>
-        <div class="timeline">
-          <div class="timeline__row">
-            <div class="timeline__date">10/2023 — 06/2025</div>
-            <div>
-              <div class="timeline__title">Economic Policy Research Specialist — North Dakota State University, Fargo, ND</div>
-              <p class="timeline__desc">Policy-facing economic research — migration flows, food insecurity, higher-ed funding, and trade — turning public data into dashboards, briefs, and testimony-ready analysis for legislators and media.</p>
-            </div>
-          </div>
-          <div class="timeline__row">
-            <div class="timeline__date">03/2023 — 09/2023</div>
-            <div>
-              <div class="timeline__title">Energy Industry Research Assistant — Brandeis University, Waltham, MA</div>
-              <p class="timeline__desc">Analyzed global renewable-energy development patterns in Tableau and the restructuring of Chinese photovoltaic supply chains under anti-dumping investigations.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-block">
-      <div class="wrap">
-        <span class="eyebrow">Publications</span>
-        <h2>Papers &amp; working papers</h2>
-        <div class="pubs" id="pubs"></div>
-        <div style="margin-top:40px;">
-          <button class="btn btn--dark" data-nav="research">See the projects behind these →</button>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ===================== RESEARCH ===================== -->
-  <main class="page" data-page="research">
-    <header class="page-head">
-      <div class="wrap">
-        <div class="eyebrow page-head__eyebrow">Research &amp; Projects</div>
-        <h1>The work, in detail</h1>
-        <p>Peer-reviewed research, doctoral working papers, and applied policy work — in one place.</p>
-      </div>
-    </header>
-
-    <section class="section section--alt">
-      <div class="wrap">
-        <div class="segbar">
-          <div class="segment" id="research-segments"></div>
-          <span class="seg-caption" id="research-caption"></span>
-        </div>
-        <div class="chips" id="research-chips"></div>
-        <div class="research-list" id="research-list"></div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ===================== TOOLBOX ===================== -->
-  <main class="page" data-page="toolbox">
-    <header class="page-head">
-      <div class="wrap">
-        <div class="eyebrow page-head__eyebrow">Toolbox</div>
-        <h1>Methods, tools, and where I&rsquo;ve used them</h1>
-        <p>Every method below links to the project where it earned its place — no skills listed without evidence.</p>
-      </div>
-    </header>
-
-    <section class="section section--alt">
-      <div class="wrap toolbox-grid">
-        <div class="toolbox-head">
-          <span>Method</span>
-          <span>Tools</span>
-          <span>Where I used it</span>
-        </div>
-        <div class="toolbox-body" id="toolbox-body"></div>
-        <p class="toolbox-note">Also worked with: MATLAB, Bloomberg, Capital IQ. &nbsp;<a href="Jiawei_Liu_Resume.pdf" download>Full resume →</a></p>
-      </div>
-    </section>
-  </main>
-
-  <!-- ===================== CONTACT (shared) ===================== -->
-  <footer class="contact" id="contact">
+  <footer id="contact" tabindex="-1">
     <div class="wrap">
-      <div class="eyebrow contact__eyebrow">Contact</div>
-      <h2>Let's talk</h2>
-      <p>Open to economist, research scientist, and applied research roles, and 2026–27 research internships.</p>
-      <div class="contact__cta">
-        <a class="btn btn--primary" href="mailto:ethanjw.liu@rutgers.edu">Email</a>
-        <a class="btn btn--ghost" href="https://www.linkedin.com/in/jiawei-ethan-liu/" target="_blank" rel="noopener">LinkedIn</a>
+      <div class="contact-grid">
+        <div><h2>Get in touch</h2><p>I welcome conversations about my research, economist and applied research roles, and 2026–27 research internships.</p></div>
+        <div class="contact-links">
+          <a href="mailto:ethanjw.liu@rutgers.edu">ethanjw.liu@rutgers.edu <span aria-hidden="true">↗</span></a>
+          <div><a href="https://www.linkedin.com/in/jiawei-ethan-liu/">LinkedIn</a><a href="Jiawei_Liu_Resume.pdf" download>Résumé <span aria-hidden="true">↓</span></a></div>
+        </div>
       </div>
-      <div class="contact__foot">
-        <span>© 2026 Jiawei "Ethan" Liu</span>
-        <span class="mono">Rutgers Business School · Newark, NJ</span>
-      </div>
+      <div class="colophon"><span>© 2026 Jiawei “Ethan” Liu</span><span>Newark, New Jersey</span></div>
     </div>
   </footer>
-
-  <script src="app.js"></script>
 </body>
 </html>
