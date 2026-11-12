@@ -401,6 +401,7 @@ img { max-width: 100%; }
   padding-top: 4px;
 }
 .proj-row__foot a { font-size: 14px; font-weight: 600; white-space: nowrap; }
+.project-links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 
 /* Segmented control */
 .segbar { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-bottom: 24px; }
@@ -545,6 +546,8 @@ img { max-width: 100%; }
    Responsive
    =========================================================== */
 @media (max-width: 700px) {
+  .nav .wrap { height: auto; min-height: 60px; flex-wrap: wrap; gap: 6px 20px; padding-block: 10px; }
+  .nav__links { gap: 6px 16px; }
   .hero h1 { font-size: 38px; }
   .hero__lead { font-size: 18px; }
   .page-head h1, .page-head--about h1 { font-size: 34px; }

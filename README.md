@@ -2,12 +2,13 @@
 
 A personal portfolio site for **Jiawei "Ethan" Liu** — applied economist, data scientist, and PhD researcher. Built as a fast, dependency-free static site.
 
-🔗 **Live:** https://YOUR-USERNAME.github.io/ethan-liu-portfolio/
+🔗 [Personal website](https://ethanjwliu.github.io/) · [Text mining course projects](https://ethanjwliu.github.io/course-projects.html)
 
 ## Highlights
 
 - **Home** — hero, "What I Do" capability carousel, and a filterable "Selected Work" carousel
 - **Research & Projects** — segmented view (Academic Research / Applied Projects) with topic filters
+- **Course Projects** — the Call Lens demo and four Jupyter notebooks on earnings calls and SEC filings
 - **Toolbox** — methods → tools → evidence table, each linking to the project where it was used
 - **About** — education timeline, experience, and publications
 - Client-side routing via URL hash (`#research`, `#toolbox`, `#about`), responsive down to mobile
@@ -40,7 +41,7 @@ python3 -m http.server 8000
 1. Push these files to a GitHub repository.
 2. **Settings → Pages → Build and deployment → Source: Deploy from a branch**.
 3. Choose the `main` branch and `/ (root)` folder, then **Save**.
-4. Your site goes live at `https://YOUR-USERNAME.github.io/REPO-NAME/` within a minute or two.
+4. Check the Pages deployment in the repository's Actions tab.
 
 ## License
 

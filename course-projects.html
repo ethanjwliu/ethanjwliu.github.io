@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ethan Liu’s coursework on SEC filings, earnings calls, and the language of corporate disclosures.">
+  <title>Text mining course projects · Ethan Liu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Portfolio">
+    <div class="wrap">
+      <a class="nav__brand" href="index.html">Ethan Liu</a>
+      <a class="nav__link" href="index.html#research">← Research &amp; Projects</a>
+    </div>
+  </nav>
+  <main>
+    <header class="page-head">
+      <div class="wrap">
+        <div class="eyebrow page-head__eyebrow">Rutgers Business School · Fall 2026</div>
+        <h1>Text mining course projects</h1>
+        <p>In <em>Decoding of Textual Corporate Communications</em>, I used SEC filings to measure the language of written disclosures and earnings calls to compare managers’ prepared remarks with their answers to analysts.</p>
+      </div>
+    </header>
+    <section class="section section--alt" aria-label="Projects">
+      <div class="wrap research-list">
+        <h2 class="section-label">Earnings calls</h2>
+        <article class="proj-row">
+          <h3>Call Lens</h3>
+          <p class="proj-row__lead">Does a sentence sound like a manager reading prepared remarks or answering a question? I built a word-count classifier from company speakers’ turns. Enter a sentence to compare its two scores and see which words contributed most.</p>
+          <div class="proj-row__foot">
+            <div class="tags"><span class="tag">Naive Bayes</span><span class="tag">Python</span><span class="tag">JavaScript</span></div>
+            <div class="project-links">
+              <a href="https://ethanjwliu.github.io/calllens/">Try Call Lens →</a>
+              <a href="https://github.com/ethanjwliu/calllens">View source</a>
+            </div>
+          </div>
+        </article>
+        <article class="proj-row">
+          <h3>From transcripts to speaker turns</h3>
+          <p class="proj-row__lead">I parsed 200 Motley Fool transcripts into two tables. The first keeps one record per call. The second contains 8,792 speaker turns, each linked to its call and marked as prepared remarks or Q&amp;A. The parser flagged six calls for review because it could not identify a Q&amp;A section.</p>
+          <div class="proj-row__foot">
+            <div class="tags"><span class="tag">Beautiful Soup</span><span class="tag">Regular expressions</span><span class="tag">pandas</span></div>
+            <div class="project-links">
+              <a href="https://github.com/ethanjwliu/ethanjwliu.github.io/blob/main/coursework/earnings-call-parser.ipynb">View parser notebook →</a>
+              <a href="coursework/earnings-call-parser.ipynb" download aria-label="Download parser notebook">Download ↓</a>
+            </div>
+          </div>
+        </article>
+        <h2 class="section-label">SEC filings</h2>
+        <article class="proj-row">
+          <h3>Isolating management’s discussion in annual reports</h3>
+          <p class="proj-row__lead">I extracted Item 7, Management’s Discussion and Analysis, to compare its language with the full filing. Of 100 downloaded files, 88 were regular 10-Ks. The parser found the section in 87 of those and left missing values for the unmatched filing.</p>
+          <div class="proj-row__foot">
+            <div class="tags"><span class="tag">Document parsing</span><span class="tag">MD&amp;A</span></div>
+            <div class="project-links">
+              <a href="https://github.com/ethanjwliu/ethanjwliu.github.io/blob/main/coursework/mda-extraction.ipynb">View extraction notebook →</a>
+              <a href="coursework/mda-extraction.ipynb" download aria-label="Download extraction notebook">Download ↓</a>
+            </div>
+          </div>
+        </article>
+        <article class="proj-row">
+          <h3>How readable are forward-looking statements?</h3>
+          <p class="proj-row__lead">I used sentence length and the share of complex words to calculate the Gunning Fog index. I scored each filing both as a whole and for sentences containing terms such as “will” or “might.” The saved table has 100 rows and 21 columns.</p>
+          <div class="proj-row__foot">
+            <div class="tags"><span class="tag">Gunning Fog</span><span class="tag">NLTK</span></div>
+            <div class="project-links">
+              <a href="https://github.com/ethanjwliu/ethanjwliu.github.io/blob/main/coursework/filing-readability.ipynb">View readability notebook →</a>
+              <a href="coursework/filing-readability.ipynb" download aria-label="Download readability notebook">Download ↓</a>
+            </div>
+          </div>
+        </article>
+        <article class="proj-row">
+          <h3>Measuring tone with financial dictionaries</h3>
+          <p class="proj-row__lead">I counted positive, negative, and litigious words in 100 filing files. Dividing each count by the document’s word count made it possible to compare filings of different lengths. The notebook keeps both the raw counts and the rates.</p>
+          <div class="proj-row__foot">
+            <div class="tags"><span class="tag">Dictionary scoring</span><span class="tag">pandas</span></div>
+            <div class="project-links">
+              <a href="https://github.com/ethanjwliu/ethanjwliu.github.io/blob/main/coursework/filing-tone.ipynb">View sentiment notebook →</a>
+              <a href="coursework/filing-tone.ipynb" download aria-label="Download sentiment notebook">Download ↓</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
