@@ -14,9 +14,9 @@
       icon: 'M3 3v18h18|M7 15l4-5 3 3 5-7'
     },
     {
-      title: 'Macro & Geopolitical Analysis',
-      desc: 'Cross-border capital flows, supply-chain reallocation, trade policy, and emerging-market industrial upgrading.',
-      icon: 'M12 2a10 10 0 100 20 10 10 0 000-20|M2 12h20 M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10'
+      title: 'Industrial Organization',
+      desc: 'I estimate how buyers switch between products when prices change and use models of firm competition to study pricing and markups.',
+      icon: 'M3 3v18h18|M6 6l13 11 M6 17L19 6'
     },
     {
       title: 'Policy Analysis & Communication',
@@ -32,6 +32,11 @@
       title: 'Text & Alternative Data',
       desc: 'LLM-based classification of thousands of S&P 500 earnings call transcripts, linked to market reaction through event-study designs.',
       icon: 'M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z|M14 2v6h6 M8 13h8 M8 17h6'
+    },
+    {
+      title: 'Macro & Geopolitical Analysis',
+      desc: 'Cross-border capital flows, supply-chain reallocation, trade policy, and emerging-market industrial upgrading.',
+      icon: 'M12 2a10 10 0 100 20 10 10 0 000-20|M2 12h20 M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10'
     }
   ];
 
@@ -55,16 +60,6 @@
       status: 'In progress',
       kinds: ['research'],
       areas: ['Macro & Geopolitical'],
-      published: false,
-      capLabel: 'Macro & Geopolitical'
-    },
-    {
-      title: 'Modern Mercantilism, Market Fragmentation, and Corporate Global Strategy',
-      takeaway: 'How industrial policy, trade restrictions, and technology controls fragment global markets — and when firms respond with regionalization, strategic decoupling, or politically embedded internationalization.',
-      tags: ['Political economy', 'Corporate strategy', 'Case analysis'],
-      status: 'In progress',
-      kinds: ['research'],
-      areas: ['Macro & Geopolitical', 'Policy Analysis'],
       published: false,
       capLabel: 'Macro & Geopolitical'
     },
